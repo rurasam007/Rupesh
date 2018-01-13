@@ -1,0 +1,9 @@
+Make repository
+Copy URl
+git clone URL
+cd repository name
+touch file name
+cat >>filename
+git add filename
+git commit -m "Comment"
+git push
