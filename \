@@ -1,0 +1,14 @@
+variable "ami"{
+default = "ami-531a4c3c"
+type ="string"
+}
+variable "type"{
+default ="t2.micro"
+}
+variable "vpc_id"{
+default ="vpc-4e238a26"
+}
+variable "gw_id"{
+default ="igw-72b4851b"
+}
+

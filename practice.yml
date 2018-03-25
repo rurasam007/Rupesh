@@ -1,0 +1,14 @@
+---
+- name: create sample file playbook
+  hosts: all
+  remote_user: ubuntu
+  tasks:
+  - name: check file exits abc.txt
+    file: path=/home/ubuntu/ansible.txt state=touch
+  - name: install nginx
+    shell: sudo apt-get install nginx -y
+  handlers:
+  - name: nginx start handler
+    service: name=nginx state=started
+    become: true
+
